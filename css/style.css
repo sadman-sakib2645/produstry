@@ -108,6 +108,25 @@ img{
 .mr25{
     margin-right: 25px;
 }
+.pd0{
+    padding-right: 0 !important;
+}
+.pdl78{
+    padding-left: 78px;
+}
+.pd145{
+   padding: 0 145px !important; 
+}
+.pl30{
+    padding-left: 33px;
+}
+.pr30{
+    padding-right: 33px;
+}
+.pl40-pr15{
+    padding-left: 40px !important;
+    padding-right: 15px !important;
+}
 
 /* ============================
         typhography css done
@@ -235,7 +254,7 @@ img{
     padding-top: 30px !important;
     padding-bottom: 30px !important;
 }
-.nav-item .nav-link{
+.nav-item .nav-hov{
     margin-right: 2px;
     padding: 10px !important;
     transition: all linear .4s;
@@ -246,11 +265,11 @@ img{
     position: relative;
     color: var(--dark) !important;
 }
-.nav-item .nav-link:hover{
+.nav-item .nav-hov:hover{
     color: var(--brand) !important;
 }
 
-.nav-item .nav-link::before{
+.nav-item .nav-hov::before{
     content: "";
     width:calc(100% + 10px) ;
     height: 100%;
@@ -265,13 +284,10 @@ img{
     top: 0px;
     left: -5px;
     transform: scale(0,1);
-    -webkit-transform: scale(0,1);
-    -moz-transform: scale(0,1);
-    -ms-transform: scale(0,1);
-    -o-transform: scale(0,1);
+    
 }
 
-.nav-item .nav-link::after{
+.nav-item .nav-hov::after{
     content: "";
     width:100% ;
     height: calc(100% + 10px);
@@ -279,31 +295,19 @@ img{
     border-left: 1px solid rgb(208, 255, 0);
     border-right: 1px solid rgb(187, 255, 0);
     transition: all ease-in-out .4s;
-    -webkit-transition: all ease-in-out .4s;
-    -moz-transition: all ease-in-out .4s;
-    -ms-transition: all ease-in-out .4s;
-    -o-transition: all ease-in-out .4s;
+    
     top: -5px;
     left: 0px;
     transform: scale(1,0);
-    -webkit-transform: scale(1,0);
-    -moz-transform: scale(1,0);
-    -ms-transform: scale(1,0);
-    -o-transform: scale(1,0);
+   
 }
-.nav-item .nav-link:hover::before{
+.nav-item .nav-hov:hover::before{
     transform: scale(1,1);
-    -webkit-transform: scale(1,1);
-    -moz-transform: scale(1,1);
-    -ms-transform: scale(1,1);
-    -o-transform: scale(1,1);
+    
 }
-.nav-item .nav-link:hover::after{
+.nav-item .nav-hov:hover::after{
     transform: scale(1,1);
-    -webkit-transform: scale(1,1);
-    -moz-transform: scale(1,1);
-    -ms-transform: scale(1,1);
-    -o-transform: scale(1,1);
+   
 }
 
 .nab-icon{
@@ -333,7 +337,8 @@ img{
     background: url(../images/banner03.jpg) no-repeat center / cover;
 }
 #banner{
-    margin-bottom: 80px;
+    margin-bottom: 100px;
+    position: relative;
 }
 #banner .banner-item{
     padding-top: 200px;
@@ -372,78 +377,635 @@ img{
     color: var(--dark);
     border-color: #ffca36;
 }
-.leftarrow{
-    font-size: 50px;
+
+
+#banner .slick-dots{
     position: absolute;
-    top: 50%;
-    left: 20px;
-    transform: translateY(-50%);
-    z-index: 999;
-    color: white;
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
-    transition: all linear .4s;
-    -webkit-transition: all linear .4s;
-    -moz-transition: all linear .4s;
-    -ms-transition: all linear .4s;
-    -o-transition: all linear .4s;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 60px;
+    padding-left: 0;
+    margin-bottom: 0;
+    display: flex;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+#banner .slick-dots li{
+    width: 16px;
+    height: 16px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+#banner .slick-dots li.slick-active{
+    background: var(--brand);
+    border-color: var(--brand);
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+
+#banner .slick-dots li button{
+    background: none;
+    outline: none;
+    font-size: 0;
+    border: none;
+}
+.leftarrow {
+	font-size: 70px;
+	color: rgb(255, 255, 255);
+	position: absolute;
+	top: 50%;
+	left: 30px;
+	transform: translateY(-50%);
+	transition: all linear .4s;
+	padding: 20px;
+	border-left: 2px solid white;
+	border-right: 2px solid white;
 }
 .leftarrow:hover{
     color: var(--brand);
+    border-color: #ffca36;
+}
+.leftarrow::after {
+	content: "";
+	width: calc(100% + 30px);
+	height: 80%;
+	border-top: 2px solid white;
+	border-bottom: 2px solid white;
+	position: absolute;
+	top: 10px;
+	left: -14px;
+    transition: all linear .4s;
+}
+.leftarrow:hover::after{
+    border-color: #ffca36;
 }
 
-
-
 .rightarrow{
-    font-size: 50px;
+    font-size: 70px;
+    color: rgb(255, 255, 255);
     position: absolute;
     top: 50%;
-    right: 20px;
+    right: 30px;
     transform: translateY(-50%);
-    z-index: 999;
-    color: white;
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
     transition: all linear .4s;
-    -webkit-transition: all linear .4s;
-    -moz-transition: all linear .4s;
-    -ms-transition: all linear .4s;
-    -o-transition: all linear .4s;
+    padding: 20px;
+    border-left: 2px solid rgb(255, 255, 255);
+    border-right: 2px solid rgb(255, 255, 255);
 }
 .rightarrow:hover{
     color: var(--brand);
+    border-color: var(--brand);
 }
-
-
-/* .left::before{
+.rightarrow::after {
     content: "";
-    width:calc(100% + 5px);
-    height: 100%;
-    border-top: 1px solid var(--brand);
-    border-bottom: 1px solid var(--brand);
+    width: calc(100% + 30px);
+    height: 80%;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
     position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 33;
-} */
-/* .span{
-    position: relative;
-    display: inline-block;
+    top: 10px;
+    left: -14px;
+    transition:all linear .4s;
+    transition: all linear .4s;
 }
-.span::after{
-    content: "";
-    width: 100%;
-    height: 1px;
-    background: red;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 88;
-} */
+.rightarrow:hover::after{
+    border-color: #ffca36;
+}
 /* ============================
         banner css ends
+=============================== */
+#service{
+    margin-bottom: 100px;
+}
+.service-head p{
+    margin-top: 16px;
+    padding: 0 71px;
+}
+
+.service-heading{
+    margin-bottom: 70px;
+}
+#service .service-contant .service-item{
+    position: relative;
+    box-shadow: 2px 5px 3px 2px rgba(0, 0, 0, 0.3);
+    transition:all linear .3s ;
+    -webkit-transition:all linear .3s ;
+    -moz-transition:all linear .3s ;
+    -ms-transition:all linear .3s ;
+    -o-transition:all linear .3s ;
+}
+#service .service-contant .service-item:hover{
+    box-shadow: none;
+}
+#service .service-contant .service-item .service-image{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(45deg);
+    margin: 0 auto;
+    position: relative;
+}
+#service .service-contant .service-item .service-image::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-top: 2px solid var(--brand);
+    border-bottom: 2px solid var(--brand);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all linear .6s;
+    transform: scale(0,1);
+    
+}
+#service .service-contant .service-item:hover .service-image:before{
+    transform: scale(1,1);
+}
+
+#service .service-contant .service-item .service-image::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-left: 2px solid var(--brand);
+    border-right: 2px solid var(--brand);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all linear .6s;
+    transform: scale(1,0);
+    
+}
+#service .service-contant .service-item:hover .service-image::after{
+    transform: scale(1,1);
+}
+#service .service-contant .service-item .service-image img{
+    transform: rotate(-45deg);
+}
+#service .service-contant .service-item .service-text{
+    position: relative;
+    margin-top: 52px !important;
+    padding: 61px 0;
+}
+#service .service-contant .service-item .service-text::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-top: 2px solid var(--brand);
+    border-bottom: 2px solid var(--brand);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all linear .7s;
+    transform: scale(0,1);
+    
+}
+#service .service-contant .service-item:hover .service-text::before{
+    transform: scale(1,1);
+}
+#service .service-contant .service-item .service-text::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-left: 2px solid var(--brand);
+    border-right: 2px solid var(--brand);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all linear .7s;
+    transform: scale(1,0);
+}
+#service .service-contant .service-item:hover .service-text::after{
+    transform: scale(1,1);
+}
+
+.ln25{
+    line-height: 25px;
+    padding: 0 40px;
+    margin-top: 8px;
+}
+#service .service-contant .service-item .border-dashed{
+    width: 1px;
+    height: 0px;
+    margin: 0 auto;
+    border-left: 2px dashed #353535;
+    position: absolute;
+    left:50%;
+    top: 32%;
+    transition: all linear .6s;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+#service .service-contant .service-item:hover .border-dashed{
+    height: 30px;
+    border-color: var(--brand);
+}
+/* ============================
+        service css ends
+=============================== */
+#about{
+    position: relative;
+    margin-bottom: 100px;
+    z-index: 111;
+}
+#about::after{
+    content: "";
+    width: 50%;
+    height: 100%;
+    background: url(../images/about-bg.png) no-repeat center / cover;
+    position: absolute;
+    top: 0;
+    left:-16%;
+    z-index: -2;
+}
+#about::before{
+    content: "";
+    width: 50%;
+    height: 100%;
+    background:var(--over70);
+    position: absolute;
+    top: 0;
+    left:-16%;
+    z-index:-1;
+}
+#about .about-person img{
+    margin-right: 40px;
+}
+#about .nav-tabs{
+    padding-top: 40px;
+    border-bottom: 5px solid #ddd;
+    padding-bottom: 15px;
+}
+
+#about .nav-tabs .nav-item{
+    width: 25%;
+}
+
+#about .nav-tabs .nav-link{
+    border-radius: 0;
+    border-color: transparent;
+    padding: 0 !important;
+}
+#about .nav-tabs .nav-link.active{
+    position: relative;
+    z-index: 1;
+}
+ .nav-tabs .nav-link.active::after{
+    content: "";
+    width: calc(100% + 40px);
+    height: 100%;
+    border-bottom: 5px solid var(--brand);
+    position: absolute;
+    top: 20px;
+    left: 0;
+    z-index: 11;
+}
+#about .nav-tabs .nav-link:hover{
+    color: var(--dark);
+}
+#about .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+	
+	background-color: #fff;
+	border-color: transparent;
+}
+#about .nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
+	border-color:transparent;
+}
+
+#about .abt-holder h5{
+    line-height: 25px !important;
+    padding-top: 25px;
+    padding-bottom: 35px;
+}
+#about .abt-holder p{
+    line-height: 25px !important;
+}
+#about .abt-holder .abt-btn{
+    margin-top: 10px;
+    display: inline-block;
+    padding:15px 25px 15px 25px;
+    border: 2px solid #ddd;
+    position: relative;
+    transition: all linear .4s;
+
+}
+#about .abt-holder .abt-btn:hover{
+    color: white;
+    border-color: var(--brand);
+}
+#about .abt-holder .first{
+    border-color: orangered;
+}
+#about .abt-holder .second{
+    border-color: blue;
+}
+#about .abt-holder .third{
+    border-color: green;
+}
+#about .abt-holder .four{
+    border-color:yellow;
+}
+#about .abt-holder .abt-btn::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: var(--brand);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    clip-path: polygon(51% 52%, 50% 53%, 51% 52%, 51% 53%, 51% 53%, 51% 53%, 51% 52%);
+    transition: all linear .4s;
+   
+}
+#about .abt-holder .abt-btn:hover:after{
+    clip-path: polygon(0 100%, 0 56%, 0 0, 63% 0, 100% 0, 100% 52%, 100% 100%);
+}
+/* ============================
+        about css ends
+=============================== */
+#portfolio{
+    margin-bottom: 100px;
+}
+#portfolio .image-box .port-image{
+    position: relative;
+    z-index: -1;
+}
+#portfolio .image-box .port-image .overlay{
+    content: "";
+    width: 100%;
+    height: 90%;
+    background:var(--brand-over80) ;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    clip-path: polygon(0 68%, 100% 45%, 100% 100%, 0% 100%);
+    transition: all linear .4s;
+    transform: scale(0,1);
+    opacity: 0;
+}
+#portfolio .image-box:hover .port-image .overlay{
+    transform: scale(1,1);
+    opacity: 1;
+}
+
+#portfolio .port-image .overlay h5{
+    padding-top: 233px;
+}
+/* ============================
+        portfolio css ends
+=============================== */
+#counter{
+    margin-bottom: 100px;
+    background: url(../images/counter-bg.png) no-repeat center / cover;
+    position: relative;
+    z-index: 1;
+    padding: 65px 0;
+}
+#counter::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: var(--over80);
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+}
+#counter .counter-item h6{
+    padding-bottom: 5px;
+}
+/* ============================
+        counter css ends
+=============================== */
+
+#blog{
+    margin-bottom: 130px;
+    position: relative;
+}
+#blog .blog-item .card{
+    margin-top: 100px;
+    border-color: transparent;
+    transition: all linear .6s;
+    margin-right: 10px;
+    padding-bottom: 50px;
+}
+
+#blog .blog-item:hover .card{
+    transform: translateY(-200px);
+}
+
+#blog .blog-item .card .team-image{
+    position: relative;
+    z-index: 1;
+}
+
+#blog .blog-item .card .team-image .overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    transition: all linear .4s;
+    clip-path: polygon(0 49%, 0 49%, 0 49%, 0 49%);
+    opacity: 0;
+    transform: scale(1,0);
+}
+#blog .blog-item:hover .card .team-image  .overlay{
+    opacity: 1;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 99%);
+    transform: scale(1,1);
+}
+ #blog .blog-item .card .overlay i{
+    width: 40px;
+    height: 40px;
+    background: white;
+    color: #000 !important;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    transition: all linear .4s;
+}
+#blog .blog-item .card .overlay i:hover{
+    background: var(--brand);
+}
+
+#blog .blog-item .card .card-body{
+    position:absolute;
+    bottom: -200px;
+    left: 0;
+    background: #fff;
+    z-index: 9999;
+    clip-path: polygon(0 57%, 0 58%, 0 57%, 0 56%);
+    transition: all linear .5s;
+    opacity: 0;
+}
+ #blog .blog-item:hover .card .card-body{
+    clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 99%);
+    opacity: 1;
+    border: 2px solid #ddd;
+}
+
+#blog .blog-item .card .card-body p{
+    line-height: 25px;
+    padding-top: 20px;
+    padding-bottom: 0 !important;
+}
+#blog .blog-item .card .card-body h5{
+    padding-top: 8px;
+    padding-bottom: 5px;
+    margin-top: 30px;
+}
+
+
+#blog .blog-item .card .card-body a{
+    display: inline-block;
+    padding:15px 25px 15px 25px;
+    border: 2px solid #ddd;
+    transition: all linear .4s;
+}
+#blog .blog-item .card .card-body a:hover{
+    color: black;
+    border-color: var(--brand);
+    background: var(--brand);
+}
+#blog .slick-center{
+    transform: translateY(-10px);
+}
+
+#blog .service-content .blog-leftarrow{
+	font-size: 40px;
+	color: rgb(0, 0, 0);
+	position: absolute;
+	top: 70%;
+	left: 30px;
+	transform: translateY(-70%);
+	transition: all linear .4s;
+	padding: 10px;
+	border-left: 2px solid #353535;
+	border-right: 2px solid #353535;
+}
+#blog .service-content .blog-leftarrow:hover{
+    color: var(--brand);
+    border-color: #ffca36;
+}
+#blog .service-content .blog-leftarrow::after {
+    content: "";
+    width: calc(100% + 20px);
+    height: 80%;
+    border-top: 2px solid #353535;
+    border-bottom: 2px solid #353535;
+    position: absolute;
+    top: 6px;
+    left: -10px;
+    transition: all linear .4s;
+}
+#blog .service-content .blog-leftarrow:hover::after{
+    border-color: #ffca36;
+}
+#blog .service-content .blog-rightarrow{
+	font-size: 40px;
+	color: rgb(0, 0, 0);
+	position: absolute;
+	top: 70%;
+	right: 30px;
+	transform: translateY(-70%);
+	transition: all linear .4s;
+	padding: 10px;
+	border-left: 2px solid #353535;
+	border-right: 2px solid #353535;
+}
+#blog .service-content .blog-rightarrow:hover{
+    color: var(--brand);
+    border-color: #ffca36;
+}
+#blog .service-content .blog-rightarrow::after {
+    content: "";
+    width: calc(100% + 20px);
+    height: 80%;
+    border-top: 2px solid #353535;
+    border-bottom: 2px solid #353535;
+    position: absolute;
+    top: 6px;
+    left: -10px;
+    transition: all linear .4s;
+}
+#blog .service-content .blog-rightarrow:hover::after{
+    border-color: #ffca36;
+}
+
+
+
+/* ============================
+        our blog css ends
+=============================== */
+#testimonial{
+    margin-bottom: 100px;
+}
+#testimonial .testimonial-item{
+    background: url(../images/testimonial-bg.png) no-repeat center / cover;
+    position: relative;
+    z-index: 11;
+    padding-top: 60px;
+}
+#testimonial .testimonial-item::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: var(--over80);
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+}
+#testimonial .testimonial-item .test-text h5{
+    padding: 0 244px;
+}
+#testimonial .testimonial-item .test-text h3{
+    padding-top: 22px;
+}
+
+#testimonial .testi-item{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: 25px !important;
+    margin-bottom: 60px !important;
+}
+
+#testimonial .testi-item img{
+    opacity: .6;
+}
+
+#testimonial .slick-center img{
+    transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+    -moz-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    -o-transform: scale(1.3);
+    opacity: 1;
+}
+
+
+/* ============================
+        testimonial css ends
 =============================== */
