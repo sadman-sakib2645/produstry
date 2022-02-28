@@ -424,6 +424,9 @@
     #blog .blog-item .card .card-body a{
         margin-top: 10px;
     }
+    #blog .blog-item .card .card-body{
+        bottom: -120px;
+    }
     /* blog ends */
 
     #testimonial .testimonial-item .test-text h5{
