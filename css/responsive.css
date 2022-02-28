@@ -1,2 +1,511 @@
+/* ================================
+    extra small device
+================================= */
+@media (max-width : 575px){
+    #menu .menu-wellcome{
+        transform: skewX(0deg);
+        -webkit-transform: skewX(0deg);
+        -moz-transform: skewX(0deg);
+        -ms-transform: skewX(0deg);
+        -o-transform: skewX(0deg);
+}
+    #menu .menu-wellcome h5{
+        transform: skewX(0deg);
+        -webkit-transform: skewX(0deg);
+        -moz-transform: skewX(0deg);
+        -ms-transform: skewX(0deg);
+        -o-transform: skewX(0deg);
+}
+    /* top bar */
 
+    .navbar{
+        background: rgba(0, 0, 0, 0.4) !important;
+    }
+
+
+    .navbar .navbar-nav .nav-item .nav-link{
+        
+        color: rgb(221, 221, 221) !important;
+        transition: all linear .4s;
+        -webkit-transition: all linear .4s;
+        -moz-transition: all linear .4s;
+        -ms-transition: all linear .4s;
+        -o-transition: all linear .4s;
+        text-align: center;
+}
+    .navbar .navbar-nav .nav-item .nav-link:hover{
+        color:#ffca36 !important;
+        padding-left: 40px !important;
+        background: rgb(255, 0, 0);
+    }
+    .navbar .navi-icon{
+        margin-left: 140px;
+    }
+
+    /* navbar ends */
+    #banner{
+        margin-bottom: 50px;
+    }
+    #banner .leftarrow{
+        display: none !important;
+    }
+    #banner .rightarrow{
+        display: none !important;
+    }
+    #banner .banner-item .banner-text p{
+        padding: 0 !important;
+    }
+
+    #banner .banner-item{
+        padding: 100px 0 !important;
+    }
+    #banner .banner-item .banner-text a{
+        margin-bottom: 10px;
+    }
+    #banner .banner-text{
+        text-align: left !important;
+    }
+
+    /* banner ends */
+    #service{
+        margin-bottom: 0 !important;
+    }
+    .service-head p{
+        padding: 0 !important;
+    }
+
+    #service .service-contant .service-item{
+        margin-bottom: 50px;
+    }
+    #service .service-contant .service-item .border-dashed{
+        top: 30%;
+    }
+
+    /* service end */
+
+    #about::after{
+        display: none;
+    }
+    #about::before{
+        display: none;
+    }
+    #about .about-person img{
+        margin: 0 !important;
+    }
+    #about .nav-tabs .nav-link{
+        font-size: 13px !important;
+    }
+    #about .abt-nav h5{
+        text-align: center !important;
+    }
+    /* about end */
+    #portfolio{
+        margin-bottom: 50px;
+    }
+    #portfolio .service-heading p{
+        padding: 0 5px !important;
+    }
+    #portfolio .image-box .port-image{
+        margin-bottom: 15px;
+    }
+    #portfolio .image-box .port-image .overlay h5{
+        margin-top: 30px;
+    }
+
+    /* portfolio ends */
+   
+    #blog .blog-leftarrow{
+        display: none !important;
+    }
+    #blog .blog-rightarrow{
+        display: none !important;
+    }
+    #blog .blog-item .card .card-body{
+        bottom: -110px !important;
+    }
+    #blog .blog-item .card .card-body ul li{
+        font-size: 10px;
+    }
+    #blog .blog-item .card .card-body a{
+        margin-top: 10px;
+    }
+    #blog .service-heading p{
+        padding: 0 5px !important;
+    }
+    #blog .blog-item .card{
+        margin-top: 30px !important;
+    }
+    #blog .blog-item:hover .card{
+        transform: translateY(-80px);
+        -webkit-transform: translateY(-80px);
+        -moz-transform: translateY(-80px);
+        -ms-transform: translateY(-80px);
+        -o-transform: translateY(-80px);
+}
+    /* blog ends */
+    #testimonial{
+        margin-bottom: 50px;
+    }
+    #testimonial .testimonial-item .test-text h5{
+        padding: 0 !important;
+    }
+    #testimonial .testi-leftarrow{
+        display: none !important;
+    }
+    #testimonial .testi-rightarrow{
+        display: none !important;
+    }
+    /* testimonial ends */
+    #brand{
+        margin-bottom: 50px;
+    }
+    #brand .brand-leftarrow{
+        display: none !important;
+    }
+    #brand .brand-rightarrow{
+        display: none !important;
+    }
+    /* brand ends */
+    footer .footer-four .part1 .part-icon{
+        padding-top: 20px !important;
+    }
+    footer .footer-four .part1 ul li{
+        font-size: 9px !important;
+    }
+}
+/* ================================
+    extra small device
+================================= */
+/* ================================
+    small device
+================================= */
+
+@media (min-width : 576px) and (max-width : 767px){
+    #menu .menu-wellcome{
+        transform: skewX(0deg);
+        -webkit-transform: skewX(0deg);
+        -moz-transform: skewX(0deg);
+        -ms-transform: skewX(0deg);
+        -o-transform: skewX(0deg);
+}
+    #menu .menu-wellcome h5{
+        transform: skewX(0deg);
+        -webkit-transform: skewX(0deg);
+        -moz-transform: skewX(0deg);
+        -ms-transform: skewX(0deg);
+        -o-transform: skewX(0deg);
+}
+    /* top bar */
+    .navbar{
+        background: rgb(255, 0, 0) !important;
+    }
+
+
+    .navbar .navbar-nav .nav-item .nav-link{
+        color: rgb(221, 221, 221) !important;
+        transition: all linear .4s;
+        -webkit-transition: all linear .4s;
+        -moz-transition: all linear .4s;
+        -ms-transition: all linear .4s;
+        -o-transition: all linear .4s;
+        text-align: center;
+}
+    .navbar .navbar-nav .nav-item .nav-link:hover{
+        color:#ffca36 !important;
+        padding-left: 40px !important;
+        background: #000;
+    }
+    .navbar .navi-icon{
+        margin-left: 250px;
+    }
+    /* navbar ends */
+    #banner .leftarrow{
+        display: none !important;
+    }
+    #banner .rightarrow{
+        display: none !important;
+    }
+    #banner .banner-item{
+        padding: 100px 0 !important;
+    }
+    /* banner ends */
+    #service .service-head p{
+        padding: 0 105px !important;
+    }
+    #service .service-contant .service-item .border-dashed{
+        top: 29%;
+    }
+    #service .service-contant .service-item{
+        margin-bottom: 30px;
+    }
+    /* service ends */
+    #about::after{
+        display: none;
+    }
+    #about::before{
+        display: none;
+    }
+    #about .about-person img{
+        margin-bottom: 20px;
+        margin-right: 70px;
+        
+    }
+    
+    #about .abt-nav h5{
+        text-align: center !important;
+    }
+    /* about ends */
+    #portfolio .image-box .port-image{
+        margin-bottom: 24px;
+    }
+    /* portfolio ends */
+    #blog .blog-leftarrow{
+        display: none !important;
+    }
+    #blog .blog-rightarrow{
+        display: none !important;
+    }
+    #blog .blog-item .card .card-body{
+        bottom: -110px !important;
+    }
+    #blog .blog-item .card .card-body h5{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #blog .blog-item .card .card-body a{
+        margin-top: 10px;
+    }
+    /* blog ends */
+    #testimonial .testimonial-item .test-text h5{
+        padding: 0 !important;
+    }
+    #testimonial .testi-leftarrow{
+        display: none !important;
+    }
+    #testimonial .testi-rightarrow{
+        display: none !important;
+    }
+    #testimonial .testimonial-item .test-text h5{
+        padding: 0 30px !important;
+    }
+    /* testimonial ends */
+    #brand .brand-leftarrow{
+        display: none !important;
+    }
+    #brand .brand-rightarrow{
+        display: none !important;
+    }
+    /* brand ends */
+}
+/* ================================
+    small device
+================================= */
+/* ================================
+    medium device
+================================= */
+@media (min-width : 768px) and (max-width : 991px){
+    .navbar{
+        background: rgb(255, 0, 0) !important;
+    }
+
+
+    .navbar .navbar-nav .nav-item .nav-link{
+        color: rgb(221, 221, 221) !important;
+        transition: all linear .4s;
+        -webkit-transition: all linear .4s;
+        -moz-transition: all linear .4s;
+        -ms-transition: all linear .4s;
+        -o-transition: all linear .4s;
+        text-align: center;
+}
+    .navbar .navbar-nav .nav-item .nav-link:hover{
+        color:#ffca36 !important;
+        padding-left: 40px !important;
+        background: #000;
+    }
+    .navbar .navi-icon{
+        margin-left: 330px;
+    }
+    /* navbar ends */
+
+    #banner .leftarrow{
+        display: none !important;
+    }
+    #banner .rightarrow{
+        display: none !important;
+    }
+    #banner .banner-item{
+        padding: 150px 0 !important;
+    }
+    /* banner ends */
+    #service .service-head p{
+        padding: 0 200px !important;
+    }
+    #service .service-contant .service-item .border-dashed{
+        top: 26%;
+    }
+    /* sercices end */
+    #about::after{
+        display: none;
+    }
+    #about::before{
+        display: none;
+    }
+    #about .about-person img{
+
+        margin-right: 185px;
+    }
+    
+    #about .abt-nav h5{
+        text-align: center !important;
+    }
+    #about .about-person{
+        position: relative;
+    }
+    #about .about-person::after{
+        content: "";
+        width: 100%;
+        height: 100%;
+        background: url(../images/about-bg.png) no-repeat center / cover;
+        position: absolute;
+        top: 0;
+        left: -50%;
+        z-index: -3;
+        
+}
+    #about .about-person::before{
+        content: "";
+        width: 100%;
+        height: 100%;
+        background:rgba(0, 0, 0, 0.7);
+        position: absolute;
+        top: 0;
+        left: -50%;
+        z-index: -2;
+}
+#about .abt-nav h5{
+    margin-top: 15px;
+}
+    /* about ends */
+    #portfolio .image-box .port-image{
+        margin-bottom: 24px;
+    }
+    #portfolio .image-box .port-image .overlay h5{
+        margin-top: 50px;
+    }
+    /* portfolio ends */
+    #blog .blog-leftarrow{
+        display: none !important;
+    }
+    #blog .blog-rightarrow{
+        display: none !important;
+    }
+    #blog .blog-item .card .card-body ul li{
+        font-size: 10px;
+    }
+
+    #blog .blog-item .card .card-body a{
+        margin-top: 10px;
+    }
+    /* blog ends */
+
+    #testimonial .testimonial-item .test-text h5{
+        padding: 0 !important;
+    }
+    #testimonial .testi-leftarrow{
+        display: none !important;
+    }
+    #testimonial .testi-rightarrow{
+        display: none !important;
+    }
+    #testimonial .testimonial-item .test-text h5{
+        padding: 0 30px !important;
+    }
+    /* testimonial ends */
+    #brand .brand-leftarrow{
+        display: none !important;
+    }
+    #brand .brand-rightarrow{
+        display: none !important;
+    }
+    /* brand ends */
+    footer .footer-third ul li {
+        padding-bottom: 10px;
+    }
+    footer .footer-four .part1 .part-icon{
+        padding-top: 20px !important;
+    }
+    footer .footer-four .part1 ul li{
+        font-size: 11px;
+    }
+    /* footer ends */
+}
+/* ================================
+    medium device
+================================= */
+/* ================================
+    large device
+================================= */
+@media(min-width: 992px) and (max-width: 1199px){
+    #menu .menu-location a{
+        font-size: 12px !important;
+    }
+    /* top bar */
+    #banner .leftarrow{
+        display: none !important;
+    }
+    #banner .rightarrow{
+        display: none !important;
+    }
+    /* banner ends */
+    #service .service-contant .service-item .border-dashed{
+        top: 29%;
+    }
+    /* service ends */
+    #about .abt-holder h5 {
+        padding-bottom: 14px;
+    }
+
+    #about .about-person img {
+        margin-right: -18px;
+    }
+
+    /* about us */
+    #portfolio .port-image .overlay h5 {
+        padding-top: 185px;
+    }
+
+    /* portfolio ends */
+    #blog .blog-leftarrow{
+        display: none !important;
+    }
+    #blog .blog-rightarrow{
+        display: none !important;
+    }
+    #blog .blog-item .card .card-body{
+        bottom: -190px;
+    }
+    #blog .blog-item .card .card-body ul li{
+        font-size: 10px;
+    }
+    #blog .blog-item .card .card-body h5{
+        font-size: 16px;
+    }
+    #blog .blog-item .card .card-body p{
+        margin-top: 0;
+    }
+    /* blog ends */
+    #brand .brand-leftarrow{
+        display: none !important;
+    }
+    #brand .brand-rightarrow{
+        display: none !important;
+    }
+    /* brand ends */
+   
+   
+}
+/* ================================
+    large device
+================================= */
 
