@@ -19,7 +19,7 @@ $(document).ready(function(){
     });
     $(".blog-slider").slick({
         arrows:true,
-        autoplay: false ,
+        autoplay: true ,
         dots: false,
         slidesToShow: 3,
         slidesToScroll:1,
