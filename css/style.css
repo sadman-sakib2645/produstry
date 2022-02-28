@@ -767,6 +767,7 @@ img{
     transition: all linear .4s;
     transform: scale(0,1);
     opacity: 0;
+    vertical-align: bottom;
 }
 #portfolio .image-box:hover .port-image .overlay{
     transform: scale(1,1);
