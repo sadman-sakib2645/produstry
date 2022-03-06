@@ -1369,7 +1369,7 @@ footer .footer-four .part1 .actv{
         button css ends
 =============================== */
 #loading{
-	background-color: #ffca36;
+	background-color: #ffff00;
 	height: 100%;
 	width: 100%;
 	position: fixed;
@@ -1492,10 +1492,13 @@ footer .footer-four .part1 .actv{
 }
 
 @keyframes object_big {
- 50% { 
+ 50% {
     transform: scale(0.5);
     -webkit-transform: scale(0.5);
-  } 
+    -moz-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    -o-transform: scale(0.5);
+} 
 
 }
 
@@ -1508,10 +1511,13 @@ footer .footer-four .part1 .actv{
 }
 
 @keyframes object_one {
- 50% { 
+ 50% {
     transform: translate(-65px,-65px) ;
     -webkit-transform: translate(-65px,-65px) ;
-  } 
+    -moz-transform: translate(-65px,-65px) ;
+    -ms-transform: translate(-65px,-65px) ;
+    -o-transform: translate(-65px,-65px) ;
+} 
 
 }
 
@@ -1536,10 +1542,13 @@ footer .footer-four .part1 .actv{
 }
 
 @keyframes object_three {
- 50% { 
+ 50% {
     transform: translate(65px,-65px) ;
     -webkit-transform: translate(65px,-65px) ;
-  } 
+    -moz-transform: translate(65px,-65px) ;
+    -ms-transform: translate(65px,-65px) ;
+    -o-transform: translate(65px,-65px) ;
+} 
 }
 
 
@@ -1568,10 +1577,13 @@ footer .footer-four .part1 .actv{
 }
 
 @keyframes object_five {
-  50% { 
+  50% {
     transform: translate(65px,65px) ;
     -webkit-transform: translate(65px,65px) ;
-  } 
+    -moz-transform: translate(65px,65px) ;
+    -ms-transform: translate(65px,65px) ;
+    -o-transform: translate(65px,65px) ;
+} 
 
 }
 
@@ -1584,10 +1596,13 @@ footer .footer-four .part1 .actv{
 }
 
 @keyframes object_six {
-  50% { 
+  50% {
     transform:  translate(0,65px) ;
     -webkit-transform:  translate(0,65px) ;
-  } 
+    -moz-transform:  translate(0,65px) ;
+    -ms-transform:  translate(0,65px) ;
+    -o-transform:  translate(0,65px) ;
+} 
 
 }
 
@@ -1601,10 +1616,13 @@ footer .footer-four .part1 .actv{
 }
 
 @keyframes object_seven {
-  50% { 
+  50% {
     transform: translate(-65px,65px) ;
     -webkit-transform: translate(-65px,65px) ;
-  } 
+    -moz-transform: translate(-65px,65px) ;
+    -ms-transform: translate(-65px,65px) ;
+    -o-transform: translate(-65px,65px) ;
+} 
 
 }
 
@@ -1616,10 +1634,13 @@ footer .footer-four .part1 .actv{
 }
 
 @keyframes object_eight {
-  50% { 
+  50% {
     transform: translate(-65px,0) ;
     -webkit-transform: translate(-65px,0) ;
-  } 
+    -moz-transform: translate(-65px,0) ;
+    -ms-transform: translate(-65px,0) ;
+    -o-transform: translate(-65px,0) ;
+} 
 
 }
 /* ============================
