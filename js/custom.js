@@ -1,5 +1,11 @@
 $(document).ready(function(){
     "use strict";
+    $(window).load(function() {
+        $("#loading").delay(3500).fadeOut(500);
+        
+        $("#loading").fadeOut(500);
+        
+    })
 
     $(".banner-slider").slick({
         autoplay: false ,
@@ -111,6 +117,26 @@ $(document).ready(function(){
                 }
             }
         ]
+    });
+    $(window).scroll(function(){
+        var scrolling = $(this).scrollTop();
+    
+        if(scrolling > 600){
+            $("#back-top").fadeIn();
+        }else{
+            $("#back-top").fadeOut();
+        }
+    
+        if(scrolling > 500){
+            $("nav").addClass("nav-fix");
+        }else{
+            $("nav").removeClass("nav-fix");
+        }
+    });
+    $("#back-top").click(function(){
+        $("html,body").animate({
+            scrollTop: "0px" ,
+        },1500);
     });
     
 })
