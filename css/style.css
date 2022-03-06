@@ -1334,6 +1334,36 @@ footer .footer-four .part1 .actv{
     background: #555;
     padding:20px 0 ;
 }
+.span-copy{
+    font-size: 26px !important;
+    position: relative;
+}
+.span-copy::before{
+    content: "~PRODUSTRY~";
+    width: 100%;
+    color: var(--brand);
+    position: absolute;
+    top: -4px;
+    left: 0;
+    border-right: 3px solid var(--brand);
+    animation: slide 3s linear infinite;
+    -moz-animation: slide 3s linear infinite;
+    -ms-animation: slide 3s linear infinite;
+    -o-animation: slide 3s linear infinite;
+    overflow: hidden;
+}
+
+@keyframes slide{
+    0%{
+        width: 0%;
+    }
+    50%{
+        width: 100%;
+    }
+    100%{
+        width: 0%;
+    }
+}
 
 /* ============================
         footer copy css ends
@@ -1345,6 +1375,7 @@ footer .footer-four .part1 .actv{
     background: #ffca36;
     cursor: pointer;
     border: none;
+    text-align: center;
     position: fixed;
     bottom: 30px;
     right: 30px;
@@ -1373,7 +1404,7 @@ footer .footer-four .part1 .actv{
 	height: 100%;
 	width: 100%;
 	position: fixed;
-	z-index: 1;
+	z-index: 999;
 	margin-top: 0px;
 	top: 0px;
 }

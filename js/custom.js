@@ -1,13 +1,12 @@
-$(window).load(function() {
-    $("#loading").delay(3500).fadeOut(500);
-    
-    $("#loading").fadeOut(500);
-    
-})
-
 $(document).ready(function(){
     "use strict";
 
+    $(window).load(function() {
+        $("#loading").delay(3500).fadeOut(500);
+        
+        $("#loading").fadeOut(500);
+        
+    })
 
     $(".banner-slider").slick({
         autoplay: false ,
