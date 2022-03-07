@@ -139,6 +139,7 @@
     }
     #blog .blog-item .card .card-body{
         bottom: -110px !important;
+        width: 100%;
     }
     #blog .blog-item .card .card-body ul li{
         font-size: 10px;

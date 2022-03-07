@@ -136,6 +136,9 @@ img{
 .pr60{
     padding-right: 60px !important;
 }
+.ml10{
+    margin-left: 15px !important;
+}
 /* ============================
         typhography css done
 =============================== */
@@ -789,6 +792,7 @@ img{
     position: relative;
     z-index: 1;
     padding: 65px 0;
+    background-attachment: fixed;
 }
 #counter::after{
     content: "";
@@ -997,6 +1001,7 @@ img{
     position: relative;
     z-index: 11;
     padding-top: 60px;
+    background-attachment: fixed;
 }
 #testimonial .testimonial-item::after{
     content: "";
@@ -1335,7 +1340,7 @@ footer .footer-four .part1 .actv{
     padding:20px 0 ;
 }
 .span-copy{
-    
+    cursor: pointer;
     font-size: 26px !important;
     position: relative;
     
