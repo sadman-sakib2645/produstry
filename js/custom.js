@@ -2,9 +2,9 @@ $(document).ready(function(){
     "use strict";
 
     $(window).load(function() {
-        $("#loading").delay(3500).fadeOut(500);
+        $("#loading").delay(2500).fadeOut(900);
         
-        $("#loading").fadeOut(500);
+        $("#loading").fadeOut(900);
         
     })
 
