@@ -1335,13 +1335,21 @@ footer .footer-four .part1 .actv{
     padding:20px 0 ;
 }
 .span-copy{
+    
     font-size: 26px !important;
     position: relative;
+    
 }
 .span-copy::before{
     content: "~PRODUSTRY~";
     width: 100%;
-    color: var(--brand);
+    background: #FF0000;
+    background: -webkit-radial-gradient(circle farthest-corner at center center, #FF0000 0%, #FFFF00 25%, #05C1FF 50%, #FFFF00 75%, #FF0000 100%);
+    background: -moz-radial-gradient(circle farthest-corner at center center, #FF0000 0%, #FFFF00 25%, #05C1FF 50%, #FFFF00 75%, #FF0000 100%);
+    background: radial-gradient(circle farthest-corner at center center, #FF0000 0%, #FFFF00 25%, #05C1FF 50%, #FFFF00 75%, #FF0000 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
     position: absolute;
     top: -4px;
     left: 0;
@@ -1364,6 +1372,7 @@ footer .footer-four .part1 .actv{
         width: 0%;
     }
 }
+
 
 /* ============================
         footer copy css ends
@@ -1414,17 +1423,18 @@ footer .footer-four .part1 .actv{
 	position: relative;
 	}
 #loading-center-absolute {
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	height: 150px;
-	width: 150px;
-	margin-top: -75px;
-	margin-left: -75px;	
-	-ms-transform: rotate(45deg); 
-   	-webkit-transform: rotate(45deg);
-    transform: rotate(45deg); 
-
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 150px;
+    width: 150px;
+    margin-top: -75px;
+    margin-left: -75px;
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
 }
 .object{
 	width: 20px;
@@ -1491,7 +1501,7 @@ footer .footer-four .part1 .actv{
     animation-delay: 0.8s; 
     background: linear-gradient(to right, #00ffcc 30%, #9966ff 97%);
 }
-}
+
 #object_eight {
 	-webkit-animation: object_eight 2s infinite;
 	animation: object_eight 2s infinite;
@@ -1674,6 +1684,8 @@ footer .footer-four .part1 .actv{
 } 
 
 }
+
+
 /* ============================
         preloader css ends
 =============================== */
