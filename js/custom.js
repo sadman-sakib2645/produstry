@@ -139,5 +139,18 @@ $(document).ready(function(){
             scrollTop: "0px" ,
         },1500);
     });
+
+    // color swither
+
+    var colorSheets = [
+        {
+            color: "black",
+            title: "Switch to black",
+            href: "./css/color-black.css"
+        },
+        
+    ];
+    
+    ColorSwitcher.init(colorSheets);
     
 })

@@ -1,0 +1,47 @@
+body{
+	background: #000;
+	color: white;
+}
+.navbar {
+	background: rgba(0, 0, 0, 0.151) !important;
+	color: white !important;
+}
+h1 , h2 , h3 , h4 , h5 ,a , p{
+	color: white !important;
+}
+#blog .blog-item .card .card-body{
+	background: yellow !important;
+}
+#blog .blog-item .card .card-body p{
+	color: rgb(0, 99, 248) !important;
+}
+
+#blog .blog-item .card .card-body h5{
+	color: #000 !important;
+}
+
+#blog .blog-item .card .card-body a{
+	color: #000 !important;
+}
+
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show > .nav-link{
+	color: white !important;
+}
+
+#service .service-contant .service-item .service-text h6{
+	color: white !important;
+}
+
+#blog .service-content .blog-leftarrow{
+	color: white !important;
+}
+#blog .service-content .blog-rightarrow{
+	color: white !important;
+}
+
+#brand .brand-leftarrow{
+	color: white !important;
+}
+#brand .brand-rightarrow{
+	color: white !important;
+}

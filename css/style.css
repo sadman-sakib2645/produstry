@@ -265,6 +265,7 @@ img{
     padding-top: 30px !important;
     padding-bottom: 30px !important;
 }
+
 .nav-item .nav-hov{
     margin-right: 2px;
     padding: 10px !important;
@@ -505,6 +506,9 @@ img{
 .service-head p{
     margin-top: 16px;
     padding: 0 71px;
+}
+#service-page #service{
+    margin-top: 100px;
 }
 
 .service-heading{
@@ -1348,13 +1352,7 @@ footer .footer-four .part1 .actv{
 .span-copy::before{
     content: "~PRODUSTRY~";
     width: 100%;
-    background: #FF0000;
-    background: -webkit-radial-gradient(circle farthest-corner at center center, #FF0000 0%, #FFFF00 25%, #05C1FF 50%, #FFFF00 75%, #FF0000 100%);
-    background: -moz-radial-gradient(circle farthest-corner at center center, #FF0000 0%, #FFFF00 25%, #05C1FF 50%, #FFFF00 75%, #FF0000 100%);
-    background: radial-gradient(circle farthest-corner at center center, #FF0000 0%, #FFFF00 25%, #05C1FF 50%, #FFFF00 75%, #FF0000 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-
+    color: var(--brand);
     position: absolute;
     top: -4px;
     left: 0;
