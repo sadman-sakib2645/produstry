@@ -148,6 +148,16 @@ $(document).ready(function(){
             title: "Switch to black",
             href: "./css/color-black.css"
         },
+        {
+            color: "red",
+            title: "Switch to red",
+            href: "./css/color-red.css"
+        },
+        {
+            color: "green",
+            title: "Switch to green",
+            href: "./css/color-green.css"
+        }
         
     ];
     

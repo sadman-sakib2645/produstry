@@ -1,0 +1,17 @@
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show > .nav-link{
+	color: rgb(41, 143, 41) !important;
+}
+
+.navi-icon{
+	color: rgb(41, 143, 41) !important;
+}
+.brand-col{
+	color: rgb(41, 143, 41) !important;
+}
+
+h5{
+	color: rgb(41, 143, 41) !important;
+}
+#counter .counter-item h6{
+	color: rgb(41, 143, 41) !important;
+}

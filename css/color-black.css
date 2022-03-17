@@ -2,9 +2,11 @@ body{
 	background: #000;
 	color: white;
 }
-.navbar {
-	background: rgba(0, 0, 0, 0.151) !important;
-	color: white !important;
+#menu .menu-location a{
+	color: #000 !important;
+}
+#menu .menu-icon ul li a i{
+	color: #000 !important;
 }
 h1 , h2 , h3 , h4 , h5 ,a , p{
 	color: white !important;
@@ -24,8 +26,8 @@ h1 , h2 , h3 , h4 , h5 ,a , p{
 	color: #000 !important;
 }
 
-.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show > .nav-link{
-	color: white !important;
+.navi-icon{
+	color: black;
 }
 
 #service .service-contant .service-item .service-text h6{

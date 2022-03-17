@@ -1,0 +1,21 @@
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show > .nav-link{
+	color: red !important;
+}
+
+.navi-icon{
+	color: red !important;
+}
+.brand-col{
+	color: red !important;
+}
+#banner .slick-dots li.slick-active {
+	background: red;
+	border-color: red;
+	
+}
+h5{
+	color: red !important;	
+}
+#counter .counter-item h6{
+	color: red !important;	
+}
